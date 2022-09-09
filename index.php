@@ -1,5 +1,6 @@
 <?php 
     require 'includes/newclass.inc.php';
+    require 'includes/personClass.inc.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +15,13 @@
         $owner1 = new Pet();
 
         echo  $owner1->owner();
+
+        $person1 = new Citizen();
+        $person1 -> setName("Joseph");
+        echo $person1 ->name;
+
+
+
     ?>
     
 </body>
