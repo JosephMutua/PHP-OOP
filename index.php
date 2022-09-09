@@ -1,3 +1,6 @@
+<?php 
+    require 'includes/newclass.inc.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +10,11 @@
     <title>Document</title>
 </head>
 <body>
-
     <?php
+        $owner1 = new Pet();
 
-    $string = "I am Joseph A student at Unversity of Youtube";
-
-    echo preg_match("/[a-zA-Z]/", $string);
-
-
+        echo  $owner1->owner();
     ?>
+    
 </body>
 </html>
